@@ -3,6 +3,7 @@ export const translations = {
     nav: { home: 'Home', download: 'Download', contact: 'Contact', faq: 'FAQ', docs: 'Docs', login: 'Login' },
     hero: { title: 'AgriNode IoT Platform', subtitle: 'A unified home server solution to monitor soil nutrition, air quality, and automate irrigation via ESP32-S3 edge modules.', btn: 'Download Now', note: 'Real-time data. Ultra-low latency. 100% Offline.' },
     download: { title: 'Get the AgriNode Client & Server', tabClient: 'Client App', tabServer: 'Server', btn: 'Download', eyebrow: 'Downloads', description: 'Choose the software that belongs in your local agriculture stack. All releases are signed and built for offline operation.', releaseNote: 'Open source, locally verifiable releases.' },
+    webApp: { tag: 'WEB APP', title: 'Browser', desc: 'Access your dashboard instantly from any modern web browser without installation.', btn: 'Open Web App' },
     steps: {
       title: 'Getting Started in 4 Steps',
       s1: { title: 'Flash Edge Nodes', desc: 'Upload C++ firmware to ESP32-S3 modules for soil and environment.', link: 'Hardware guide' },
@@ -24,6 +25,7 @@ export const translations = {
     nav: { home: 'Trang chủ', download: 'Tải xuống', contact: 'Liên hệ', faq: 'Hỏi đáp', docs: 'Tài liệu', login: 'Đăng nhập' },
     hero: { title: 'Nền tảng IoT AgriNode', subtitle: 'Giải pháp máy chủ tại nhà toàn diện giám sát dinh dưỡng đất, vi khí hậu và tự động tưới tiêu qua vi biên ESP32-S3.', btn: 'Tải xuống ngay', note: 'Dữ liệu thời gian thực. Độ trễ cực thấp. Hoạt động 100% Offline.' },
     download: { title: 'Tải về Máy khách & Máy chủ', tabClient: 'Ứng dụng', tabServer: 'Máy chủ', btn: 'Tải xuống', eyebrow: 'Tải xuống', description: 'Chọn phần mềm phù hợp với hệ thống nông nghiệp nội bộ của bạn. Mọi bản phát hành đều được ký và xây dựng để hoạt động ngoại tuyến.', releaseNote: 'Mã nguồn mở, bản phát hành có thể kiểm chứng cục bộ.' },
+    webApp: { tag: 'ỨNG DỤNG WEB', title: 'Trình duyệt', desc: 'Truy cập bảng điều khiển tức thì từ bất kỳ trình duyệt nào mà không cần cài đặt.', btn: 'Mở ứng dụng Web' },
     steps: {
       title: 'Bắt đầu với 4 bước',
       s1: { title: 'Nạp Firmware', desc: 'Tải mã nguồn C++ lên mạch ESP32-S3 đo đất và môi trường.', link: 'Hướng dẫn phần cứng' },
@@ -44,6 +46,7 @@ export const translations = {
     nav: { home: '首页', download: '下载', contact: '联系', faq: '常见问题', docs: '文档', login: '登录' },
     hero: { title: 'AgriNode 物联网平台', subtitle: '统一的家庭服务器解决方案，通过 ESP32-S3 边缘模块监控土壤营养、空气质量并自动灌溉。', btn: '立即下载', note: '实时数据。超低延迟。100% 离线。' },
     download: { title: '获取 AgriNode 客户端和服务器', tabClient: '客户端应用', tabServer: '服务器', btn: '下载', eyebrow: '下载', description: '选择适合本地农业系统的软件。所有版本均经过签名，并为离线运行而构建。', releaseNote: '开源，可在本地验证的版本。' },
+    webApp: { tag: '网页应用', title: '浏览器', desc: '无需安装，直接通过现代浏览器访问您的控制台。', btn: '打开网页应用' },
     steps: {
       title: '4步快速入门',
       s1: { title: '烧录边缘节点', desc: '将 C++ 固件上传至 ESP32-S3 模块。', link: '硬件指南' },
@@ -64,6 +67,7 @@ export const translations = {
     nav: { home: 'ホーム', download: 'ダウンロード', contact: '連絡先', faq: 'よくある質問', docs: 'ドキュメント', login: 'ログイン' },
     hero: { title: 'AgriNode IoT プラットフォーム', subtitle: 'ESP32-S3エッジモジュールを介して土壌栄養、空気質を監視し、灌漑を自動化する統合ホームサーバーソリューション。', btn: '今すぐダウンロード', note: 'リアルタイムデータ。超低遅延。100% オフライン。' },
     download: { title: 'クライアントとサーバーを入手', tabClient: 'クライアントアプリ', tabServer: 'サーバー', btn: 'ダウンロード', eyebrow: 'ダウンロード', description: 'ローカル農業スタックに適したソフトウェアを選択してください。すべてのリリースは署名済みで、オフライン動作用に構築されています。', releaseNote: 'オープンソースで、ローカル検証可能なリリース。' },
+    webApp: { tag: 'ウェブアプリ', title: 'ブラウザ', desc: 'インストール不要。モダンブラウザから直接ダッシュボードにアクセスできます。', btn: 'Webアプリを開く' },
     steps: {
       title: '4つのステップで始める',
       s1: { title: 'ノードのフラッシュ', desc: 'ESP32-S3モジュールにC++ファームウェアをアップロードします。', link: 'ハードウェアガイド' },
@@ -84,6 +88,7 @@ export const translations = {
     nav: { home: 'Accueil', download: 'Télécharger', contact: 'Contact', faq: 'FAQ', docs: 'Docs', login: 'Connexion' },
     hero: { title: 'Plateforme IoT AgriNode', subtitle: "Une solution de serveur domestique unifiée pour surveiller la nutrition du sol, la qualité de l'air et automatiser l'irrigation via ESP32-S3.", btn: 'Télécharger', note: 'Données en temps réel. Latence ultra-faible. 100% hors ligne.' },
     download: { title: 'Obtenir le Client & Serveur', tabClient: 'Application', tabServer: 'Serveur', btn: 'Télécharger', eyebrow: 'Téléchargements', description: "Choisissez le logiciel adapté à votre système agricole local. Toutes les versions sont signées et conçues pour fonctionner hors ligne.", releaseNote: 'Versions open source vérifiables localement.' },
+    webApp: { tag: 'APP WEB', title: 'Navigateur', desc: "Accédez instantanément à votre tableau de bord depuis n'importe quel navigateur sans installation.", btn: "Ouvrir l'App Web" },
     steps: {
       title: 'Commencer en 4 étapes',
       s1: { title: 'Flasher les nœuds', desc: 'Téléchargez le firmware C++ sur les modules ESP32-S3.', link: 'Guide matériel' },
@@ -104,6 +109,7 @@ export const translations = {
     nav: { home: 'Главная', download: 'Скачать', contact: 'Контакт', faq: 'ЧаВО', docs: 'Доки', login: 'Войти' },
     hero: { title: 'IoT Платформа AgriNode', subtitle: 'Единое решение для домашнего сервера для мониторинга питания почвы, качества воздуха и автоматизации полива.', btn: 'Скачать сейчас', note: 'Данные в реальном времени. Сверхнизкая задержка. 100% офлайн.' },
     download: { title: 'Получить Клиент и Сервер', tabClient: 'Приложение', tabServer: 'Сервер', btn: 'Скачать', eyebrow: 'Загрузки', description: 'Выберите ПО для локальной сельскохозяйственной системы. Все релизы подписаны и созданы для работы офлайн.', releaseNote: 'Открытые релизы с локальной проверкой.' },
+    webApp: { tag: 'ВЕБ-ПРИЛОЖЕНИЕ', title: 'Браузер', desc: 'Мгновенный доступ к панели управления из любого браузера без установки.', btn: 'Открыть Веб-приложение' },
     steps: {
       title: 'С чего начать (4 шага)',
       s1: { title: 'Прошивка узлов', desc: 'Загрузите прошивку C++ в модули ESP32-S3.', link: 'Руководство по железу' },
@@ -121,4 +127,3 @@ export const translations = {
     footer: { title: 'Для фермеров, которые ценят контроль.', description: 'Интеллект вашего поля должен оставаться на вашем поле, а не в чужом облаке.', faqs: [{ question: 'Отправляются ли данные моей фермы в сторонние облака?', answer: 'Абсолютно нет. AgriNode построен вокруг домашнего сервера. База данных на 100% локальная.' }, { question: 'Как получить удалённый доступ?', answer: 'Интеграция Cloudflare Tunnels (Zero Trust). Проброс портов не требуется.' }], copyright: '© 2026 Проект AgriNode. Создано для точного земледелия. Открытый исходный код | Лицензия MIT.' },
   },
 };
-

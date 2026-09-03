@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Apple, Box, CheckCircle2, Download, Monitor, Server, Smartphone, Terminal } from 'lucide-react';
+import { Apple, Box, CheckCircle2, Download, ExternalLink, Globe, Monitor, Server, Smartphone, Terminal } from 'lucide-react';
 import { useApp } from '../AppContext';
 
 const cardClass = 'rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm shadow-zinc-200/50 transition-all duration-300 hover:-translate-y-1 hover:border-zinc-300 hover:shadow-xl hover:shadow-zinc-200/50 sm:p-8 dark:border-white/10 dark:bg-[#121214] dark:shadow-none dark:hover:border-white/30 dark:hover:bg-white/[0.03] dark:hover:shadow-none';
@@ -29,7 +29,7 @@ function ClientGrid() {
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35 }}
-      className="grid gap-4 lg:grid-cols-3"
+      className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4"
     >
       <PlatformCard icon={Monitor} eyebrow={t.ui.desktopApp} title="Windows" size="124 MB" description={t.ui.completeControl}>
         <button className={buttonClass}>{t.download.btn} amd64</button><button className={buttonClass}>{t.download.btn} x86</button><button className={buttonClass}>{t.download.btn} arm64</button>
@@ -39,6 +39,9 @@ function ClientGrid() {
       </PlatformCard>
       <PlatformCard icon={Smartphone} eyebrow={t.ui.mobileApp} title="Mobile" size="45 MB" description={t.ui.remoteMonitoring}>
         <button className={buttonClass}>.APK</button><button className={buttonClass}>App Store</button>
+      </PlatformCard>
+      <PlatformCard icon={Globe} eyebrow={t.webApp.tag} title={t.webApp.title} description={t.webApp.desc}>
+        <button type="button" className={`${buttonClass} gap-1.5`}><ExternalLink size={13} />{t.webApp.btn}</button>
       </PlatformCard>
     </motion.div>
   );
