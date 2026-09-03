@@ -1,6 +1,6 @@
 name = "agrinode"
 main = "worker/index.js"
-compatibility_date = "2026-09-04"
+compatibility_date = "2025-04-01"
 
 [assets]
 directory = "./dist"
