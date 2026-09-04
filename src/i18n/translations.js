@@ -1,6 +1,8 @@
 export const translations = {
   en: {
     nav: { home: 'Home', download: 'Download', contact: 'Contact', faq: 'FAQ', docs: 'Docs', login: 'Login' },
+    auth: { login: 'Sign In', register: 'Sign Up', username: 'Username', fullName: 'Full Name', email: 'Email Address', password: 'Password', confirmPassword: 'Confirm Password', googleBtn: 'Continue with Google', noAccount: "Don't have an account?", hasAccount: 'Already have an account?', or: 'OR', captcha: 'Verify you are human', passMismatch: 'Passwords do not match!' },
+    waitlist: { eyebrow: 'Early access', title: 'Bring local intelligence to your field.', description: 'Join the list for AgriNode updates and release news.', fullName: 'Full name', email: 'Email address', submit: 'Join waitlist', submitting: 'Joining waitlist', success: 'You’re on the list.', successDetail: 'We’ll let you know when AgriNode is ready for your field.', error: 'Unable to join right now. Please try again.' },
     hero: { title: 'AgriNode IoT Platform', subtitle: 'A unified home server solution to monitor soil nutrition, air quality, and automate irrigation via ESP32-S3 edge modules.', btn: 'Download Now', note: 'Real-time data. Ultra-low latency. 100% Offline.' },
     download: { title: 'Get the AgriNode Client & Server', tabClient: 'Client App', tabServer: 'Server', btn: 'Download', eyebrow: 'Downloads', description: 'Choose the software that belongs in your local agriculture stack. All releases are signed and built for offline operation.', releaseNote: 'Open source, locally verifiable releases.' },
     webApp: { tag: 'WEB APP', title: 'Browser', desc: 'Access your dashboard instantly from any modern web browser without installation.', btn: 'Open Web App' },
@@ -23,6 +25,8 @@ export const translations = {
   },
   vi: {
     nav: { home: 'Trang chủ', download: 'Tải xuống', contact: 'Liên hệ', faq: 'Hỏi đáp', docs: 'Tài liệu', login: 'Đăng nhập' },
+    auth: { login: 'Đăng nhập', register: 'Đăng ký', username: 'Tên đăng nhập', fullName: 'Họ và tên', email: 'Địa chỉ Email', password: 'Mật khẩu', confirmPassword: 'Xác nhận Mật khẩu', googleBtn: 'Tiếp tục với Google', noAccount: 'Chưa có tài khoản?', hasAccount: 'Đã có tài khoản?', or: 'HOẶC', captcha: 'Xác minh bạn là con người', passMismatch: 'Mật khẩu không khớp!' },
+    waitlist: { eyebrow: 'Quyền truy cập sớm', title: 'Mang trí tuệ cục bộ đến cánh đồng của bạn.', description: 'Đăng ký để nhận cập nhật và tin tức phát hành AgriNode.', fullName: 'Họ và tên', email: 'Địa chỉ Email', submit: 'Tham gia danh sách', submitting: 'Đang đăng ký', success: 'Bạn đã có tên trong danh sách.', successDetail: 'Chúng tôi sẽ báo khi AgriNode sẵn sàng cho cánh đồng của bạn.', error: 'Không thể đăng ký lúc này. Vui lòng thử lại.' },
     hero: { title: 'Nền tảng IoT AgriNode', subtitle: 'Giải pháp máy chủ tại nhà toàn diện giám sát dinh dưỡng đất, vi khí hậu và tự động tưới tiêu qua vi biên ESP32-S3.', btn: 'Tải xuống ngay', note: 'Dữ liệu thời gian thực. Độ trễ cực thấp. Hoạt động 100% Offline.' },
     download: { title: 'Tải về Máy khách & Máy chủ', tabClient: 'Ứng dụng', tabServer: 'Máy chủ', btn: 'Tải xuống', eyebrow: 'Tải xuống', description: 'Chọn phần mềm phù hợp với hệ thống nông nghiệp nội bộ của bạn. Mọi bản phát hành đều được ký và xây dựng để hoạt động ngoại tuyến.', releaseNote: 'Mã nguồn mở, bản phát hành có thể kiểm chứng cục bộ.' },
     webApp: { tag: 'ỨNG DỤNG WEB', title: 'Trình duyệt', desc: 'Truy cập bảng điều khiển tức thì từ bất kỳ trình duyệt nào mà không cần cài đặt.', btn: 'Mở ứng dụng Web' },
@@ -44,6 +48,8 @@ export const translations = {
   },
   zh: {
     nav: { home: '首页', download: '下载', contact: '联系', faq: '常见问题', docs: '文档', login: '登录' },
+    auth: { login: '登录', register: '注册', username: '用户名', fullName: '姓名', email: '邮箱地址', password: '密码', confirmPassword: '确认密码', googleBtn: '使用 Google 登录', noAccount: '还没有账号？', hasAccount: '已经有账号？', or: '或', captcha: '验证您是人类', passMismatch: '两次密码不一致！' },
+    waitlist: { eyebrow: '抢先体验', title: '将本地智能带到您的农田。', description: '加入列表，获取 AgriNode 更新和发布消息。', fullName: '姓名', email: '邮箱地址', submit: '加入等待名单', submitting: '正在加入', success: '您已加入名单。', successDetail: 'AgriNode 准备好服务您的农田时，我们会通知您。', error: '暂时无法加入，请稍后再试。' },
     hero: { title: 'AgriNode 物联网平台', subtitle: '统一的家庭服务器解决方案，通过 ESP32-S3 边缘模块监控土壤营养、空气质量并自动灌溉。', btn: '立即下载', note: '实时数据。超低延迟。100% 离线。' },
     download: { title: '获取 AgriNode 客户端和服务器', tabClient: '客户端应用', tabServer: '服务器', btn: '下载', eyebrow: '下载', description: '选择适合本地农业系统的软件。所有版本均经过签名，并为离线运行而构建。', releaseNote: '开源，可在本地验证的版本。' },
     webApp: { tag: '网页应用', title: '浏览器', desc: '无需安装，直接通过现代浏览器访问您的控制台。', btn: '打开网页应用' },
@@ -65,6 +71,8 @@ export const translations = {
   },
   ja: {
     nav: { home: 'ホーム', download: 'ダウンロード', contact: '連絡先', faq: 'よくある質問', docs: 'ドキュメント', login: 'ログイン' },
+    auth: { login: 'ログイン', register: '登録', username: 'ユーザー名', fullName: '氏名', email: 'メールアドレス', password: 'パスワード', confirmPassword: 'パスワード（確認）', googleBtn: 'Googleでログイン', noAccount: 'アカウントをお持ちでないですか？', hasAccount: 'すでにアカウントをお持ちですか？', or: 'または', captcha: '人間であることを確認してください', passMismatch: 'パスワードが一致しません！' },
+    waitlist: { eyebrow: '早期アクセス', title: 'ローカルインテリジェンスを農場へ。', description: 'AgriNodeの更新とリリース情報を受け取るリストに登録してください。', fullName: '氏名', email: 'メールアドレス', submit: 'ウェイトリストに登録', submitting: '登録中', success: 'リストに登録されました。', successDetail: 'AgriNodeがお使いの農場で利用可能になったらお知らせします。', error: '現在登録できません。もう一度お試しください。' },
     hero: { title: 'AgriNode IoT プラットフォーム', subtitle: 'ESP32-S3エッジモジュールを介して土壌栄養、空気質を監視し、灌漑を自動化する統合ホームサーバーソリューション。', btn: '今すぐダウンロード', note: 'リアルタイムデータ。超低遅延。100% オフライン。' },
     download: { title: 'クライアントとサーバーを入手', tabClient: 'クライアントアプリ', tabServer: 'サーバー', btn: 'ダウンロード', eyebrow: 'ダウンロード', description: 'ローカル農業スタックに適したソフトウェアを選択してください。すべてのリリースは署名済みで、オフライン動作用に構築されています。', releaseNote: 'オープンソースで、ローカル検証可能なリリース。' },
     webApp: { tag: 'ウェブアプリ', title: 'ブラウザ', desc: 'インストール不要。モダンブラウザから直接ダッシュボードにアクセスできます。', btn: 'Webアプリを開く' },
@@ -86,6 +94,8 @@ export const translations = {
   },
   fr: {
     nav: { home: 'Accueil', download: 'Télécharger', contact: 'Contact', faq: 'FAQ', docs: 'Docs', login: 'Connexion' },
+    auth: { login: 'Se connecter', register: "S'inscrire", username: "Nom d'utilisateur", fullName: 'Nom complet', email: 'Adresse e-mail', password: 'Mot de passe', confirmPassword: 'Confirmer le mot de passe', googleBtn: 'Continuer avec Google', noAccount: 'Pas encore de compte ?', hasAccount: 'Déjà un compte ?', or: 'OU', captcha: 'Vérifiez que vous êtes humain', passMismatch: 'Les mots de passe ne correspondent pas !' },
+    waitlist: { eyebrow: 'Accès anticipé', title: 'L’intelligence locale pour votre champ.', description: 'Inscrivez-vous pour recevoir les mises à jour et sorties AgriNode.', fullName: 'Nom complet', email: 'Adresse e-mail', submit: 'Rejoindre la liste', submitting: 'Inscription…', success: 'Vous êtes sur la liste.', successDetail: 'Nous vous préviendrons quand AgriNode sera prêt pour votre champ.', error: 'Impossible de vous inscrire. Réessayez.' },
     hero: { title: 'Plateforme IoT AgriNode', subtitle: "Une solution de serveur domestique unifiée pour surveiller la nutrition du sol, la qualité de l'air et automatiser l'irrigation via ESP32-S3.", btn: 'Télécharger', note: 'Données en temps réel. Latence ultra-faible. 100% hors ligne.' },
     download: { title: 'Obtenir le Client & Serveur', tabClient: 'Application', tabServer: 'Serveur', btn: 'Télécharger', eyebrow: 'Téléchargements', description: "Choisissez le logiciel adapté à votre système agricole local. Toutes les versions sont signées et conçues pour fonctionner hors ligne.", releaseNote: 'Versions open source vérifiables localement.' },
     webApp: { tag: 'APP WEB', title: 'Navigateur', desc: "Accédez instantanément à votre tableau de bord depuis n'importe quel navigateur sans installation.", btn: "Ouvrir l'App Web" },
@@ -107,6 +117,8 @@ export const translations = {
   },
   ru: {
     nav: { home: 'Главная', download: 'Скачать', contact: 'Контакт', faq: 'ЧаВО', docs: 'Доки', login: 'Войти' },
+    auth: { login: 'Войти', register: 'Регистрация', username: 'Имя пользователя', fullName: 'Полное имя', email: 'Электронная почта', password: 'Пароль', confirmPassword: 'Подтвердите пароль', googleBtn: 'Продолжить с Google', noAccount: 'Нет аккаунта?', hasAccount: 'Уже есть аккаунт?', or: 'ИЛИ', captcha: 'Подтвердите, что вы человек', passMismatch: 'Пароли не совпадают!' },
+    waitlist: { eyebrow: 'Ранний доступ', title: 'Локальный интеллект для вашего поля.', description: 'Оставьте контакты, чтобы получать новости AgriNode и информацию о релизах.', fullName: 'Полное имя', email: 'Электронная почта', submit: 'В список ожидания', submitting: 'Регистрация…', success: 'Вы в списке.', successDetail: 'Мы сообщим, когда AgriNode будет готов для вашего поля.', error: 'Не удалось зарегистрироваться. Попробуйте ещё раз.' },
     hero: { title: 'IoT Платформа AgriNode', subtitle: 'Единое решение для домашнего сервера для мониторинга питания почвы, качества воздуха и автоматизации полива.', btn: 'Скачать сейчас', note: 'Данные в реальном времени. Сверхнизкая задержка. 100% офлайн.' },
     download: { title: 'Получить Клиент и Сервер', tabClient: 'Приложение', tabServer: 'Сервер', btn: 'Скачать', eyebrow: 'Загрузки', description: 'Выберите ПО для локальной сельскохозяйственной системы. Все релизы подписаны и созданы для работы офлайн.', releaseNote: 'Открытые релизы с локальной проверкой.' },
     webApp: { tag: 'ВЕБ-ПРИЛОЖЕНИЕ', title: 'Браузер', desc: 'Мгновенный доступ к панели управления из любого браузера без установки.', btn: 'Открыть Веб-приложение' },

@@ -11,7 +11,7 @@
   }
 
   body {
-    @apply bg-white font-sans text-zinc-900 antialiased transition-colors duration-300 dark:bg-[#09090b] dark:text-zinc-400;
+    @apply bg-white font-sans text-slate-900 antialiased transition-colors duration-300 dark:bg-[#09090b] dark:text-zinc-400;
   }
 
   ::selection {

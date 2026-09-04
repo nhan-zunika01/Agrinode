@@ -5,7 +5,7 @@ const AppContext = createContext(null);
 
 const getInitialTheme = () => {
   const saved = window.localStorage.getItem('agrinode-theme');
-  return saved === 'light' ? 'light' : 'dark'; // dark is the default
+  return saved === 'dark' ? 'dark' : 'light'; // light is the default
 };
 
 const getInitialLanguage = () => {

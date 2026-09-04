@@ -11,7 +11,7 @@ const languages = [
   { code: 'ru', label: 'Русский' },
 ];
 
-export default function Navbar() {
+export default function Navbar({ onLogin }) {
   const { language, setLanguage, theme, toggleTheme, t } = useApp();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isChangingLang, setIsChangingLang] = useState(false);
@@ -53,15 +53,15 @@ export default function Navbar() {
           aria-label={t.ui.changingLanguage}
         />
       )}
-      <header className="sticky top-0 z-50 flex w-full items-center justify-between border-b border-zinc-200/80 bg-white/80 px-6 py-4 backdrop-blur-md transition-colors duration-300 dark:border-white/10 dark:bg-[#09090b]/80">
-        <a href="#home" className="group flex items-center gap-2 text-lg font-semibold tracking-tight text-zinc-950 dark:text-zinc-100">
+      <header className="sticky top-0 z-50 flex w-full items-center justify-between border-b border-slate-200/80 bg-white/85 px-6 py-4 shadow-sm shadow-slate-200/30 backdrop-blur-md transition-colors duration-300 dark:border-white/10 dark:bg-[#09090b]/80 dark:shadow-none">
+        <a href="#home" className="group flex items-center gap-2 text-lg font-semibold tracking-tight text-slate-900 dark:text-zinc-100">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-50 text-emerald-600 transition-all duration-300 group-hover:bg-emerald-100 dark:bg-emerald-400/10 dark:text-emerald-300 dark:group-hover:bg-emerald-400/20">
             <Leaf size={17} strokeWidth={2.2} />
           </span>
           AgriNode
         </a>
 
-        <nav className="hidden items-center gap-7 text-sm text-zinc-600 md:flex dark:text-zinc-400" aria-label="Primary navigation">
+        <nav className="hidden items-center gap-7 text-sm text-slate-600 md:flex dark:text-zinc-400" aria-label="Primary navigation">
           {[
             ['home', '#home'],
             ['download', '#download'],
@@ -69,7 +69,7 @@ export default function Navbar() {
             ['faq', '#faq'],
             ['docs', '#getting-started'],
           ].map(([key, href]) => (
-            <a key={key} href={href} className="transition-colors duration-300 hover:text-zinc-950 dark:hover:text-zinc-100">
+            <a key={key} href={href} className="transition-colors duration-300 hover:text-slate-900 dark:hover:text-zinc-100">
               {t.nav[key]}
             </a>
           ))}
@@ -79,7 +79,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={toggleTheme}
-            className="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-200 bg-white text-zinc-600 transition-all duration-300 hover:border-zinc-300 hover:bg-zinc-100 hover:text-zinc-950 dark:border-white/10 dark:bg-white/[0.04] dark:text-zinc-300 dark:hover:border-white/20 dark:hover:bg-white/10 dark:hover:text-white"
+            className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 shadow-sm shadow-slate-200/50 transition-all duration-300 hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900 dark:border-white/10 dark:bg-white/[0.04] dark:text-zinc-300 dark:hover:border-white/20 dark:hover:bg-white/10 dark:hover:text-white dark:shadow-none"
             aria-label={theme === 'dark' ? t.ui.switchToLight : t.ui.switchToDark}
             title={theme === 'dark' ? t.ui.switchToLight : t.ui.switchToDark}
           >
@@ -90,7 +90,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setIsMenuOpen((open) => !open)}
-              className="flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-sm text-zinc-600 transition-all duration-300 hover:bg-zinc-100 hover:text-zinc-950 sm:px-3 dark:text-zinc-300 dark:hover:bg-white/10 dark:hover:text-zinc-100"
+              className="flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-sm text-slate-600 transition-all duration-300 hover:bg-slate-100 hover:text-slate-900 sm:px-3 dark:text-zinc-300 dark:hover:bg-white/10 dark:hover:text-zinc-100"
               aria-haspopup="listbox"
               aria-expanded={isMenuOpen}
             >
@@ -100,7 +100,7 @@ export default function Navbar() {
             </button>
 
             {isMenuOpen && (
-              <div className="absolute right-0 mt-2 w-44 overflow-hidden rounded-xl border border-zinc-200 bg-white p-1.5 shadow-2xl shadow-zinc-200/70 dark:border-white/10 dark:bg-[#161619] dark:shadow-black/50">
+              <div className="absolute right-0 mt-2 w-44 overflow-hidden rounded-xl border border-slate-200 bg-white p-1.5 shadow-md shadow-slate-200/70 dark:border-white/10 dark:bg-[#161619] dark:shadow-black/50">
                 {languages.map((option) => (
                   <button
                     key={option.code}
@@ -108,7 +108,7 @@ export default function Navbar() {
                     role="option"
                     aria-selected={language === option.code}
                     onClick={() => chooseLanguage(option.code)}
-                    className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm text-zinc-600 transition-all duration-300 hover:bg-zinc-100 hover:text-zinc-950 dark:text-zinc-400 dark:hover:bg-white/10 dark:hover:text-zinc-100"
+                    className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm text-slate-600 transition-all duration-300 hover:bg-slate-100 hover:text-slate-900 dark:text-zinc-400 dark:hover:bg-white/10 dark:hover:text-zinc-100"
                   >
                     {option.label}
                     {language === option.code && <Check size={14} className="text-blue-500 dark:text-blue-400" />}
@@ -120,11 +120,11 @@ export default function Navbar() {
 
           <button
             type="button"
-            onClick={() => setIsLoggedIn((loggedIn) => !loggedIn)}
+            onClick={() => (onLogin ? onLogin() : setIsLoggedIn((loggedIn) => !loggedIn))}
             className={isLoggedIn
-              ? 'flex h-9 w-9 items-center justify-center rounded-full bg-blue-500 text-sm font-bold text-white transition-all duration-300 hover:bg-blue-400 hover:shadow-lg hover:shadow-blue-500/20'
-              : 'rounded-lg bg-zinc-900 px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-100'}
-            aria-label={`${t.nav.login} (demo)`}
+              ? 'flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 text-sm font-bold text-white transition-all duration-300 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/20'
+              : 'rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-slate-800 dark:bg-white dark:text-black dark:hover:bg-zinc-100'}
+            aria-label={t.nav.login}
           >
             {isLoggedIn ? 'A' : <span className="flex items-center gap-1.5"><UserRound size={15} />{t.nav.login}</span>}
           </button>

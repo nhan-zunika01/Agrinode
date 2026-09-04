@@ -1,3 +1,5 @@
+import { onRequest as handleUsersRequest } from '../functions/api/users.js';
+
 const statusPayload = JSON.stringify({
   platform: 'AgriNode',
   status: 'online',
@@ -24,6 +26,10 @@ export default {
           'content-type': 'application/json; charset=UTF-8',
         },
       });
+    }
+
+    if (url.pathname === '/api/users') {
+      return handleUsersRequest({ request, env });
     }
 
     return env.ASSETS.fetch(request);

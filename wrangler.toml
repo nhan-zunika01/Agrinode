@@ -12,3 +12,8 @@ run_worker_first = ["/api/*"]
 enabled = true
 invocation_logs = true
 persist = true
+
+[[d1_databases]]
+binding = "agrinode_db"
+database_name = "agrinode-db"
+database_id = "55ed32bb-cba9-4af8-a041-ca047c7ef344"
